@@ -28,12 +28,12 @@ public class Booking {
     @Column(name = "checkoutDate")
     private LocalDate checkOutDate;
 
-    @Column(name = "bookingOff")
+    @Column(name = "bookingOff", insertable = false)
     private Boolean bookingOff;
 
     @Column(name = "bookingOffDate")
     private LocalDate bookingOffDate;
 
     @Column(name = "totalPrice")
-    private Integer totalPrice;
+    private Float totalPrice;
 }
